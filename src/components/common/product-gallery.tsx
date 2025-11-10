@@ -23,7 +23,7 @@ export default function ProductGallery() {
           <button
             key={thumb.id}
             onClick={() => setSelectedImage(idx)}
-            className={`relative w-20 h-24 rounded border transition-colors overflow-hidden ${
+            className={`relative w-20 h-24  border transition-colors overflow-hidden ${
               selectedImage === idx ? "border-foreground" : "border-border"
             }`}
           >
@@ -33,7 +33,7 @@ export default function ProductGallery() {
       </div>
 
       {/* Main Image */}
-      <div className="order-1 lg:order-2 relative w-full h-[300px] lg:h-[530px] rounded-lg overflow-hidden">
+      <div className="order-1 lg:order-2 relative w-full h-[300px] lg:h-[530px] overflow-hidden">
         <Image
           src={thumbnails[selectedImage].src}
           alt=""

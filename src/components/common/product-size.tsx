@@ -11,8 +11,8 @@ export default function ProductSize({ state, setState }: any) {
           <button
             key={size}
             onClick={() => setState("size", size)}
-            className={`size-10 grid  place-items-center border rounded-sm text-sm font-medium ${
-              state?.size == size && "bg-black! rounded-sm! text-white! border"
+            className={`size-10 grid  place-items-center border  text-sm font-medium ${
+              state?.size == size && "bg-black!  text-white! border"
             }`}
           >
             {size}

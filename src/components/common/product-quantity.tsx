@@ -19,7 +19,7 @@ export default function ProductQuantity({ state, setState }: any) {
   };
 
   return (
-    <div className="flex items-center border border-border rounded-lg w-fit">
+    <div className="flex items-center border border-border  w-fit">
       <button
         onClick={handleDecrement}
         className="p-3 hover:bg-muted transition"
