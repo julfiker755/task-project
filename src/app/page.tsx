@@ -23,7 +23,7 @@ export default function Home() {
   };
 
   return (
-    <div className="pt-10">
+    <div className="lg:h-screen lg:w-screen flex flex-col justify-center items-center mt-4 lg:mt-0">
       <div className="container  mx-auto">
         <div className="grid grid-cols-1 gap-10 lg:grid-cols-2">
           <ProductGallery />
