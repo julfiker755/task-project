@@ -36,7 +36,7 @@ export default function Home() {
               ]}
             />
             <h1 className="text-2xl  font-semibold text-foreground leading-tight">
-              Men's Premium Gray Thobe - Modern Middle Eastern Style
+              Men&apos;s Premium Gray Thobe - Modern Middle Eastern Style
             </h1>
             <p className="text-muted-foreground mt-3  leading-relaxed">
               Step into timeless elegance with this premium gray thobe, crafted
