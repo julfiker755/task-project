@@ -13,17 +13,21 @@ export default function ProductColors({ state, setState }: any) {
     <div>
       <h3 className="text-sm font-semibold text-foreground mb-1">Colors</h3>
       <div className="flex gap-3">
-        {colors.map(({ name, value, hex }) => (
-          <button
-            key={value}
-            onClick={() => setState("color", value)}
-            className={`w-8 h-8 rounded cursor-pointer border-1 border-transparent transition-all ${
-              state?.color === value && "border-[#000]!"
+        {colors.map((item) => (
+          <div
+            key={item.name}
+            onClick={() => setState("color", item.value)}
+            className={`w-10 h-10 cursor-pointer border ${
+              state.color === item.value
+                ? "border-black p-[2px]"
+                : "border-transparent"
             }`}
-            style={{ backgroundColor: hex }}
-            title={name}
-            aria-label={`Select ${name}`}
-          />
+          >
+            <div
+              className="w-full h-full"
+              style={{ backgroundColor: item.hex }}
+            ></div>
+          </div>
         ))}
       </div>
     </div>

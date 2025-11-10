@@ -23,7 +23,7 @@ export default function Home() {
   };
 
   return (
-    <div className="lg:h-screen lg:w-screen flex flex-col justify-center items-center mt-4 lg:mt-0">
+    <div className="lg:h-screen  lg:w-screen flex flex-col justify-center items-center mt-4 lg:mt-0">
       <div className="container  mx-auto">
         <div className="grid grid-cols-1 gap-10 lg:grid-cols-2">
           <ProductGallery />
@@ -35,18 +35,18 @@ export default function Home() {
                 { label: "Men's Premium Gray Thobe", href: "/men" },
               ]}
             />
-            <h1 className="text-2xl  font-semibold text-foreground leading-tight">
+            <h1 className="text-[28px] font-semibold text-foreground leading-[42px]">
               Men&apos;s Premium Gray Thobe - Modern Middle Eastern Style
             </h1>
-            <p className="text-muted-foreground mt-3  leading-relaxed">
+            <p className="text-[#848484] mt-3 text-sm">
               Step into timeless elegance with this premium gray thobe, crafted
-              for men who appreciate both tradition and contemporary style.
+              for men who appreciate both tradition and contemporary style
             </p>
             <div className="flex border-b pb-3 items-baseline gap-3">
-              <span className="text-2xl font-semibold text-foreground">
+              <span className="text-2xl font-semibold">
                 2.000.00 TL
               </span>
-              <span className="text-lg text-muted-foreground line-through">
+              <span className="text-lg line-through  text-muted-foreground">
                 2.550 TL
               </span>
             </div>
@@ -57,13 +57,13 @@ export default function Home() {
               <Button
                 onClick={() => handleSubmit()}
                 size="lg"
-                className="w-full cursor-pointer"
+                className="w-full rounded-none cursor-pointer"
               >
                 {" "}
                 Add To Cart
               </Button>
             </div>
-            <div className="flex flex-wrap gap-4 text-sm border-b pb-2 pt-3">
+            <div className="flex flex-wrap space-x-[16px] text-sm border-b pb-[26px] pt-3">
               <button className="flex items-center gap-2 text-foreground  transition">
                 <Heart size={18} />
                 <span>Add To Wishlist</span>
@@ -77,10 +77,8 @@ export default function Home() {
                 <span>Share</span>
               </button>
             </div>
-            <div className="flex gap-3 bg-muted/50 p-4 rounded border border-border">
-              <AlertCircle
-                size={18}
-                className="text-primary flex-shrink-0 mt-0.5"
+            <div className="flex mb-3 gap-3 mt-[26px]  p-4 rounded">
+            <AlertCircle
               />
               <p className="text-sm text-foreground">
                 This product is selling out fast! Just 59 minutes ago, another
